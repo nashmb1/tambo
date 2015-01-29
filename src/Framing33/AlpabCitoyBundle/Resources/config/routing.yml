@@ -1,0 +1,25 @@
+framing33_langue_francaise:
+    path:  /languefrancaise
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33AlpabCitoyBundle:Alph:languefrancaise.html.twig'
+
+framing33_langues_occidentales:
+    path:  /languesoccidentales
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33AlpabCitoyBundle:Alph:languesoccidentales.html.twig'
+
+
+framing33_langues_africaines:
+    path:  /languesafricaines
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33AlpabCitoyBundle:Alph:languesafricaines.html.twig'
+
+
+framing33_langues_orientales:
+    path:  /languesorientales
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33AlpabCitoyBundle:Alph:languesorientales.html.twig'

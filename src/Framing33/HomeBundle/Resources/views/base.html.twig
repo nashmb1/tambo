@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}FRAMING33{% endblock %}</title>
+    {% block stylesheet %}
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {% endblock %}
+</head>
+<body>
+
+<div class="container">
+    <div class="color_top"><header></header>
+        <h1 class="text-muted">FRAMING33</h1>
+        <nav class="navbar navbar-inverse ">
+            <div class="navbar-header">
+                <div class="navbar-brand"><a href="{{ path('framing33_homepage') }}"></a> FRAMING33</div>
+                <button type="button" data-target="#navbar" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <ul class="nav navbar-nav navbar-collapse collapse" id="navbar">
+                <li><a class="active" href="{{ path('framing33_homepage') }}">Accueil</a></li>
+                <li><a href="{{ path('framing33_qui_sommes_nous') }}">Qui sommes nous?</a></li>
+                <li><a href="{{ path('framing33_nos_formules') }}">Nos formules</a></li>
+                <li><a href="{{ path('framing33_nos_professeurs') }}">Nos professeurs</a></li>
+                <li><a href="{{ path('framing33_recrutement') }}">Recrutement</a></li>
+                <li><a href="{{ path('framing33_nous_contacter') }}">Contact</a> </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="div_padding color_top">
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="stn-scolaire">Soutien Scolaire</h3>
+                <ul id="nav2" class="nav nav-pills nav-stacked">
+                    <li><a class="" href="{{ path('framing33_cours_particulier') }}">Cours particuliers</a></li>
+                    <li><a class="" href="{{ path('framing33_aides_aux_devoirs') }}">Aide aux dévoirs</a> </li>
+                    <li><a class="" href="{{ path('framing33_groupes_etudes') }}">Groupes d'études</a> </li>
+                    <li><a class="" href="{{ path('framing33_stage_intensif') }}">Stages intensifs</a></li>
+                    <li><a class="" href="{{ path('framing33_vacancesscolaire') }}">Vacances scolaires</a> </li>
+                    <li><a class="" href="{{ path('framing33_inscription_a_nos_cours') }}">S'inscrire</a></li>
+                </ul>
+
+
+                <h3 class="alp-citoyennete">Alphabétisation</h3>
+                <ul id="nav2" class="nav nav-pills nav-stacked">
+                    <li><a href="{{ path('framing33_langue_francaise') }}">Langue française</a></li>
+                    <li><a href="{{ path('framing33_langues_occidentales') }}">Langues occidentales</a></li>
+                    <li><a href="{{ path('framing33_langues_africaines') }}">Langues africaines</a></li>
+                    <li><a href="{{ path('framing33_langues_orientales') }}">Langues orientales</a></li>
+                    <li><a class="" href="{{ path('framing33_inscription_a_nos_cours') }}">S'inscrire</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                {% block body %}  {% endblock %}
+            </div>
+        </div>
+    </div>
+
+    <div class="color_bottom">
+        <footer class="footer">
+            <p> FRAMING33©{{ 'now'|date('Y') }} and beyond.</p>
+        </footer>
+    </div>
+</div>
+
+{% block javascripts %}
+    <script
+            src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script
+            src="{{ asset('js/bootstrap.min.js')}}"></script>
+    <script>
+
+    </script>
+{% endblock %}
+</body>
+</html>

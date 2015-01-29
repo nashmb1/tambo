@@ -1,0 +1,38 @@
+framing33_homepage:
+    path:     /
+    defaults: { _controller: Framing33HomeBundle:Home:index }
+
+framing33_nous_contacter:
+    path:    /contact
+    defaults:  {_controller:Framing33HomeBundle:Home:contact}
+
+framing33_qui_sommes_nous:
+    path:    /nous_sommes
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33HomeBundle:Home:quisommesnous.html.twig'
+
+framing33_nos_formules:
+    path:  /nosformules
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33HomeBundle:Home:coursparticuliers.html.twig'
+
+
+framing33_nos_professeurs:
+    path:  /nosformules
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33HomeBundle:Home:nosprofesseurs.html.twig'
+
+framing33_recrutement:
+    path:  /recrutement
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33HomeBundle:Home:recrutement.html.twig'
+
+framing33_aides_devoirs:
+    path: /aidesauxdevoirs
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33SoutienScolaire:SoutienScolaire:aidesauxdevoirs.html.twig'

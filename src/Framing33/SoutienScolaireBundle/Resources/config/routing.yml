@@ -1,0 +1,53 @@
+framing33_soutien_scolaire_homepage:
+    path:     /
+    defaults: { _controller: Framing33SoutienScolaireBundle:SoutienScolaire:index }
+
+framing33_inscription_a_nos_cours:
+    path:     /inscription_a_nos_cours
+    defaults: { _controller: Framing33SoutienScolaireBundle:SoutienScolaire:inscription }
+
+
+framing33_cours_particulier:
+    path: /coursparticuliers
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33SoutienScolaireBundle:SoutienScolaire:coursparticuliers.html.twig'
+
+
+framing33_aides_aux_devoirs:
+    path:  /aidesauxdevoirs
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33SoutienScolaireBundle:SoutienScolaire:aidesauxdevoirs.html.twig'
+
+
+framing33_groupes_etudes:
+    path:  /groupedetude
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33SoutienScolaireBundle:SoutienScolaire:groupesdetudes.html.twig'
+
+
+framing33_vacancesscolaire:
+    path:  /vacances
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33SoutienScolaireBundle:SoutienScolaire:vacancesscolaire.html.twig'
+
+framing33_stage_intensif:
+    path:  /stagesintensifs
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33SoutienScolaireBundle:SoutienScolaire:stageintensif.html.twig'
+
+framing33_aides_aux_devoirs:
+    path:  /aidesauxdevoirs
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33SoutienScolaireBundle:SoutienScolaire:aidesauxdevoirs.html.twig'
+
+framing33_nos_tarifs:
+    path:  /nostarifs
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33SoutienScolaireBundle:SoutienScolaire:nostarifs.html.twig'

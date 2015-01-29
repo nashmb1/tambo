@@ -1,0 +1,132 @@
+header{
+    font-size: 100%;
+    font-style: bold;
+    padding-top: 20px;
+    background-color: #1d5c49;
+}
+
+body{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 50%;
+    margin: auto;
+}
+
+.carousel_container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 65%;
+}
+
+.framing_form1{
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 20px;
+}
+.framing_form2{
+    color: orangered;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.block-height{
+    line-height: 10px;
+    padding-top: 80px;
+}
+.footer{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    border-top: 5px solid #8a6d3b;
+    color: orangered;
+    margin-top: 10px;
+
+}
+.nav-justified{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/*[class*="col-"]{
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 6px;
+}*/
+
+.nav-justified > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #080808;
+    text-align: center;
+    background-color:chocolate; /* Old browsers */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5e5e5));
+    background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+    background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #f5f5f5), to(#e5e5e5));
+    background-image:         linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+    background-repeat: repeat-x; /* Repeat the gradient */
+    border-bottom: 1px solid #d5d5d5;
+    border-right: 1px solid #ffffff;
+}
+.color_top{
+    background-color:#f6f6f6;
+}
+.color_top1{
+    background-color: chocolate;
+}
+.color_bottom{
+    background-color: #242e2f;
+}
+.div_padding{
+    padding-top: 10px;
+    margin-top: 10px;
+}
+hr {
+    height: 15px;
+    background-color: #34362b;
+    margin-bottom: 20px;
+    border-image: none;
+}
+.container1{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.color{
+    color:orangered;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.stn-scolaire{
+    background-color: orangered;
+    font-weight: bold;
+    text-align: center;
+}
+.alp-citoyennete{
+    background-color: #1d5c49;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul#nav2 li a:hover {
+    background-color:#ececec;
+    color:lime;
+}
+
+ul#nav2 li a{
+    text-decoration:none;
+    padding:5px 21px;
+    background:#9c9e8e;
+    color:antiquewhite;
+    font-weight: bold;
+    text-align:center;
+    border-top:1px solid #815444;
+    border-right:1px solid #3d1000;
+    border-bottom:1px solid #3d1000;
+    border-left:1px solid #815444;
+}

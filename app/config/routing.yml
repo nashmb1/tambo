@@ -1,0 +1,12 @@
+framing33_alpab_citoy:
+    resource: "@Framing33AlpabCitoyBundle/Resources/config/routing.yml"
+    prefix:   /
+
+framing33_soutien_scolaire:
+    resource: "@Framing33SoutienScolaireBundle/Resources/config/routing.yml"
+    prefix:   /soutienscolaire
+
+framing33_home:
+    resource: "@Framing33HomeBundle/Resources/config/routing.yml"
+    prefix:   /
+

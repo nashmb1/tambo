@@ -1,0 +1,54 @@
+{% extends "Framing33HomeBundle::base.html.twig" %}
+{% block title %}{{ parent() }}{% endblock %}
+{% block body %}
+    <div class="well container1">
+        <h4 class="color">Toutes vos questions auront une réponse sous 48h</h4>
+        <div class="alert alert-success">
+            {% for message in app.session.flashbag.get('notice') %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+        {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+        {# Leserreurs générales du formulaire. #}
+        {{ form_errors(form) }}
+
+        <div class="form-group">
+            {# Génération du label. #}
+            {{ form_label(form.nom, "Nom", {'label_attr': {'class': 'col-sm-3 control-label'}}) }} {#
+		Affichage des erreurs pour ce champ précis. #}
+            {{form_errors(form.nom) }}
+            <div class="col-sm-9">{# Génération de l'input. #}
+                {{form_widget(form.nom, {'attr': {'class': 'form-control'}}) }}</div>
+        </div>
+
+
+        {# Idem pour un autre champ. #}
+
+        <div class="form-group">
+            {{ form_label(form.mail, "Email",{'label_attr':{'class':'col-sm-3 control-label'}})}}
+            {{ form_errors(form.mail) }}
+            <div class="col-sm-9">{{
+                form_widget(form.mail,{'attr':{'class':'form-control'}}) }}</div>
+        </div>
+        <div class = "form-group">
+            {{ form_label(form.categorie, "Sujet", {'label_attr':{'class':'col-sm-3 control-label'}}) }}
+            {{ form_errors(form.categorie) }}
+            <div class ="col-sm-9">
+                {{ form_widget(form.categorie,{'attr':{'class':'form-control'}}) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.message, "Votre message",{'label_attr':{'class': 'col-sm-3 control-label'}}) }}
+            {{ form_errors(form.message) }}
+            <div class="col-sm-9">{{ form_widget(form.message, {'attr':{'class':'form-control','rows':'7'}}) }}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-4">
+                {{ form_widget(form.envoyer,{'attr': {'class': 'btn btn-primary btn-block'}}) }}
+            </div>
+        </div>
+        {{ form_rest(form) }}
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
