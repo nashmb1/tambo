@@ -36,13 +36,4 @@ class HomeController extends Controller
             'form' => $form->createView()
         ));
     }
-
-    public function quiSommesNousAction()
-    {
-        return $this->render('Framing33HomeBundle:Home:quisommesnous.html.twig');
-    }
-    public function recrutementAction()
-    {
-        return $this->render('Framing33HomeBundle:Home:recrutement.html.twig');
-    }
 }

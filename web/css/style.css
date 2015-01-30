@@ -5,8 +5,8 @@ header{
     background-color: #1d5c49;
 }
 
-body{
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+p{
+    font-family:myVollkorn;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -21,6 +21,20 @@ body{
     height: 65%;
 }
 
+@font-face {
+    font-family: myVollkorn;
+    src: url(../fonts/Vollkorn/Vollkorn-Regular.ttf);
+}
+@font-face {
+    font-family: myVollkorn;
+    src: url(../fonts/Vollkorn/Vollkorn-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: myVollkorn;
+    src: url(../fonts/Vollkorn/Vollkorn-Italic.ttf);
+    font-style: italic;
+}
 .framing_form1{
     font-weight: bold;
     font-size: 40px;
@@ -86,9 +100,10 @@ body{
     margin-top: 10px;
 }
 hr {
-    height: 15px;
+    height: 2px;
     background-color: #34362b;
     margin-bottom: 20px;
+    width: 80%;
     border-image: none;
 }
 .container1{
@@ -115,7 +130,7 @@ hr {
 
 ul#nav2 li a:hover {
     background-color:#ececec;
-    color:lime;
+    color:#000000;
 }
 
 ul#nav2 li a{
@@ -129,4 +144,36 @@ ul#nav2 li a{
     border-right:1px solid #3d1000;
     border-bottom:1px solid #3d1000;
     border-left:1px solid #815444;
+}
+
+#cadre{
+    font-family: myVollkorn;
+    background-color: #ffffff;
+    margin-right: 10%;
+    margin-left: 10%;
+    min-height: 500px;
+    border-top:1px solid #815444;
+    border-right:1px solid #3d1000;
+    border-bottom:1px solid #3d1000;
+    border-left:1px solid #815444;
+    border-radius: 15px;
+}
+#block-text{
+    text-align: center;
+    text-align: justify;
+    border-color: darkorange;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#block-text > span{
+     font-weight: bold;
+}
+
+#block-text >h3{
+    font-weight: bold;
+    text-align: center;
+}
+p >span{
+    font-weight: bold;
+    color: #003333;
 }

@@ -1,39 +1,104 @@
 
 {% extends "Framing33HomeBundle::base.html.twig" %}
 {% block body %}
-    <div class="carousel_container">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+    <div id="cadre">
+        <div id="block-text">
+            <h3>Nos formules et nos tarifs</h3>
+            <hr>
+            <p>Les parents sont libres de commander le nombre d’heures qu’ils souhaitent.</p>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="{{ asset('images/soutien_scolaire.jpg') }}" alt="Chania">
-                </div>
+            <span>Aide aux devoirs</span>
+            <p>Une formule qui permet, du primaire au lycée, d’acquérir une bonne méthodologie de travail, comportant notamment les révisions des cours de la semaine, les devoirs à faire à domicile et l’entraînement via d’autres exercices.
+                Un enseignant polyvalent  peut intervenir sur plusieurs disciplines, et accompagner votre enfant vers son autonomie.</p>
+            <table classs="table">
+                <tr>
+                    <td>Environ 40h Soutien à l’année</td><td>1 fois 1h/semaine</td></tr>
+                <tr>
+                    <td>Environ 60hSoutien à l’année</td><td>1 fois 1h30/semaine</td></tr>
+                <tr>
+                    <td>Environ 80hSoutien à l’année</td><td>1 fois 2h/semaine ou 2 x 1h/semaine</td>
+                </tr>
+            </table>
+            <span>Cours Particuliers / Soutien Scolaire Trimestriel</span>
+            <dl class="dl-horizontal">
+                Environ 15h 	Remise à niveau en cours d’année
+                Environ 24h 	Soutien trimestriel
+                Environ 48h	Soutien bi trimestriel
 
-                <div class="item">
-                    <img src="{{ asset('images/alphabetisation.jpg') }}" alt="Chania">
-                </div>
+            </dl>
+            <table>
+                <tr>
+                    <td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td>
+                </tr>
+            </table>
+            Il y a une remise à niveau ou un suivi régulier sur une période à déterminer ensemble (parents et Framing33). Cela se passe en compagnie d’un enseignant qualifié qui reprend avec votre enfant des bases non assimilées et des notions importantes de son programme.
 
-                <div class="item">
-                    <img src="{{ asset('images/citoyennete.jpg') }}" alt="Flower">
-                </div>
-            </div>
+            Voir nos tarifs
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            Stages intensifs de vacances à domicile
+            La période des vacances est souvent propice à la révision des bases scolaires, des notions non acquises durant l’année scolaire ou le trimestre précédent. Framing33 propose stages intensifs pendant une semaine ou 2 ou même pendant les grandes vacances, les cours pouvant être plus étalés. Avec des professeurs sur toute la France, les cours peuvent être dispensés à votre domicile ou sur votre lieu de vacances.
+
+            Environ 10h 	1 semaine 2h x 5 jours
+            Environ 15h 	2 semaines 1h30 x 10 jours
+            Environ 20h 	2 semaines 2h x 10 jours
+            <table>
+                <tr>
+                    <td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td>
+                </tr>
+            </table>
+            Voir nos tarifs
+
+            Nos plus
+
+            4 points forts pour nous différencier !
+            a.	Des professeurs qualifiés
+            Et soigneusement sélectionnés ayant tous le niveau minimum requis par l’Éducation Nationale.
+
+            b.	Évaluation/Cours d’essai à domicile
+            A votre demande nos conseillers peuvent évaluer gratuitement votre enfant afin d’établir un 1er bilan.
+
+            c.	Tarifs dégressifs
+            En fonction du nombre d’enfants, nous consentons une baisse sur nos tarifs.
+            d.	Facilité de paiement.
+            Un service de proximité et des horaires à la carte chez vous !
+
+            Supports et manuels extrascolaires fournis.
+
+            Déduction fiscale
+            FRAMING33 à domicile est un organisme agréé par l’État qui existe depuis 2014, nous permettant ainsi de vous faire bénéficier d’une déduction fiscale de 50% ou d’un crédit d’impôt sur l’intégralité des paiements.
+
+            Qui peut en bénéficier ?
+            Pour en bénéficier, il suffit que les parents soient fiscalement domiciliés en France.
+            1.	si vous êtes imposable : vous bénéficiez d’une réduction d’impôt de 50% sur les heures de cours commandées.
+            2.	si vous êtes non imposable : vous avez droit à un crédit d’impôt de 50% sur les heures de cours commandées.
+
+            Y a-t-il une limite à cette déduction fiscale ?
+            Oui il y a un plafond mais il est très haut : le montant tous services à domicile confondus s’élève à 13 000 €.
+
+            Très simple, finies les démarches administratives
+            1.	Framing33 se charge de tout : cotisations, immatriculations aux URSAFF, gestion des salaires des enseignants et tous les autres documents administratifs. Le tout inclus dans le prix, sans la moindre charge sociale à payer dessus.
+            2.	Annuellement, en temps voulu une attestation fiscale à joindre à votre déclaration d’impôts, vous est fournie pour bénéficier de votre réduction d’impôts. Toute heure achetée dans l’année fiscale donne droit à la déduction fiscale.
+            3.	Vous devez reporter dans la case prévue à cet effet dans votre déclaration de revenus la somme indiquée sur l’attestation fiscale, dans la section 7, case DF : « sommes versées pour l’emploi d’un salarié à domicile ».
+
+            Par exemple :
+            Si vous dépensez 1000 € de cours durant une année, vous pourrez déduire 500 € de vos impôts ou être remboursé de 500 € si vous n’êtes pas imposable par le Trésor public français.
+
+            Notre garantie 100% satisfaction :
+            Nous mettons un point d’honneur à vous satisfaire et à répondre aux besoins de votre enfant.
+            Si malgré tous nos efforts, vous n’étiez pas à 100% satisfaits de l’intervenant proposé, Framing33 s’engage à vous présenter, sans aucun frais supplémentaire, un autre professeur dans les meilleurs délais.
+
         </div>
     </div>
 {% endblock %}
