@@ -62,12 +62,6 @@ p{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-/*[class*="col-"]{
-    background-color: lightgreen;
-    border: 2px solid black;
-    border-radius: 6px;
-}*/
-
 .nav-justified > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -126,8 +120,11 @@ hr {
     background-color: #1d5c49;
     font-weight: bold;
     text-align: center;
-}
 
+}
+.alp-citoyennete >a{
+    color:#000000;
+}
 ul#nav2 li a:hover {
     background-color:#ececec;
     color:#000000;
@@ -176,4 +173,16 @@ ul#nav2 li a{
 p >span{
     font-weight: bold;
     color: #003333;
+}
+table{
+    background-color: greenyellow;
+}
+.rouge{
+    color: red;
+    font-size: 1.6em;
+    text-align: center;
+}
+.vert11{
+    color: darkolivegreen;
+    font-size: 1.2em;
 }

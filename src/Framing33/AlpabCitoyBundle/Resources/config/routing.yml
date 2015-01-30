@@ -23,3 +23,9 @@ framing33_langues_orientales:
     defaults:
         _controller: FrameworkBundle:Template:template
         template: 'Framing33AlpabCitoyBundle:Alph:languesorientales.html.twig'
+
+framing33_alphabetisation_citoyennete:
+    path:  /soutienscolaire
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'Framing33AlpabCitoyBundle:Alph:alphabetisationcitoyennete.html.twig'
