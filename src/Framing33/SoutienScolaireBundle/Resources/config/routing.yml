@@ -3,7 +3,7 @@ framing33_soutien_scolaire_homepage:
     defaults: { _controller: Framing33SoutienScolaireBundle:SoutienScolaire:index }
 
 framing33_inscription_a_nos_cours:
-    path:     /inscription_a_nos_cours
+    path:     /inscription
     defaults: { _controller: Framing33SoutienScolaireBundle:SoutienScolaire:inscription }
 
 

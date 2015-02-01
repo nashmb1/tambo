@@ -1,26 +1,22 @@
 <?php
 
-namespace Framing33\SoutienScolaireBundle\Controller;
+namespace Framing33\AlpabCitoyBundle\Controller;
 
-
-use Framing33\SoutienScolaireBundle\Entity\Etudiant;
-use Framing33\SoutienScolaireBundle\Form\EtudiantType;
+use Framing33\AlpabCitoyBundle\Entity\EtudiantAlphabetisation;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Framing33\AlpabCitoyBundle\Form\EtudiantAlphabetisationType;
 
-
-class SoutienScolaireController extends Controller{
-
-    public function indexAction(){
-
-        return $this->render('Framing33SoutienScolaireBundle:SoutienScolaire:index.html.twig');
-
+class AlphaCitoyController extends Controller
+{
+    public function indexAction($name)
+    {
+        return $this->render('Framing33AlpabCitoyBundle:Alph:index.html.twig');
     }
     public function inscriptionAction(Request $request){
+        $etudiant = new EtudiantAlphabetisation();
 
-        $etudiant = new Etudiant();
-
-        $form = $this->createForm(new EtudiantType(),$etudiant);
+        $form = $this->createForm(new EtudiantAlphabetisationType(),$etudiant);
 
         if ($form->handleRequest ( $request )->isValid ()) {
             // On l'enregistre notre objet $advert dans la base de données
@@ -28,7 +24,6 @@ class SoutienScolaireController extends Controller{
             $em->persist($etudiant);
             $em->flush();
 
-            //envoie du mail de confirmation
             $message = \Swift_Message::newInstance()
                 ->setSubject('Confirmation de demande d\'inscription')
                 ->setFrom('framing33.test@gmail.com')
@@ -37,14 +32,12 @@ class SoutienScolaireController extends Controller{
                  prise en compte de votre demande d\'inscription.Un mail de confirmation vous sera envoyé dès la validation de votre inscription.<br><br>Bien cordialement<br>L\'équipe de Framing33','text/html')
             ;
             $this->get('mailer')->send($message);
-
             // On redirige vers la page de confirmation
             return $this->render('Framing33SoutienScolaireBundle:SoutienScolaire:confirmation.html.twig' );
         }
 
-        return $this->render('Framing33SoutienScolaireBundle:SoutienScolaire:inscription.html.twig',array(
+        return $this->render('Framing33AlpabCitoyBundle:Alph:inscription.html.twig',array(
             'form' => $form->createView(),
         ));
-
     }
 }

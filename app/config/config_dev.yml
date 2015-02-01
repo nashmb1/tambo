@@ -45,4 +45,6 @@ assetic:
     use_controller: true
 
 #swiftmailer:
-#    delivery_address: me@example.com
+#    transport: gmail
+#    username:  framing.test@gmail.com
+#    password:  nation00

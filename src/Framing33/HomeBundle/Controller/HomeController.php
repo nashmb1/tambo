@@ -19,10 +19,21 @@ class HomeController extends Controller
         $contact = new Contact();
         $form = $this->createForm(new ContactType(),$contact);
 
+
+
         if($form->handleRequest($request)->isValid()){
             $em = $this->getDoctrine()->getManager();
             $em->persist($contact);
             $em->flush();
+
+            //envoie du mail au webmaster
+            $message = \Swift_Message::newInstance()
+                ->setSubject($contact->getCategorie())
+                ->setFrom($contact->getMail())
+                ->setTo('framing33.test@gmail.com')
+                ->setBody($contact->getMessage())
+            ;
+            $this->get('mailer')->send($message);
 
             $request->getSession()->getFlashBag ()->add ( 'notice','Votre demande a été prise en charge' );
 

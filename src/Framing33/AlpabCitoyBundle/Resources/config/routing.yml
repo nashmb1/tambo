@@ -1,3 +1,7 @@
+framing33_alph_inscription:
+    path: /inscription
+    defaults: {_controller: Framing33AlpabCitoyBundle:AlphaCitoy:inscription}
+
 framing33_langue_francaise:
     path:  /languefrancaise
     defaults:

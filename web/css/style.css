@@ -1,10 +1,29 @@
 header{
-    font-size: 100%;
+    font-size: 2em;
     font-style: bold;
     padding-top: 20px;
-    background-color: #1d5c49;
+    font-family: myVollkorn;
 }
+#head1{
+    font-size: 2em;
+    color: #1d5c49;
+}
+#head2{
+    font-size: 1em;
+    line-height: 0px;
+    font-family: myBlessed;
+}
+#head3{
+    font-size: 2em;
+    text-align: center;
+    text-decoration:wavy;
+    color: orangered;
+    font-family: myBlackO;
+    line-height: 50px;
+    padding-right: 30%;
+    padding-bottom: 5px;
 
+}
 p{
     font-family:myVollkorn;
 }
@@ -24,6 +43,13 @@ p{
 @font-face {
     font-family: myVollkorn;
     src: url(../fonts/Vollkorn/Vollkorn-Regular.ttf);
+}
+@font-face {
+    font-family: myBlackO;
+    src: url(../fonts/Black__Olives.ttf);
+}@font-face {
+    font-family: myBlessed;
+    src: url(../fonts/BLESD___.otf);
 }
 @font-face {
     font-family: myVollkorn;
@@ -168,6 +194,7 @@ ul#nav2 li a{
 
 #block-text >h3{
     font-weight: bold;
+    color:orangered;
     text-align: center;
 }
 p >span{
@@ -185,4 +212,20 @@ table{
 .vert11{
     color: darkolivegreen;
     font-size: 1.2em;
+}
+.cadre1{
+    font-family: myVollkorn;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.cadre1 h3{
+    text-align: center;
+    font-size: 1.6em;
+    color:orangered;
+    font-weight: bold;
+}
+
+.cadre1 > .cadre2{
+    margin-left: 15%;
+    margin-right: 15%;
 }
