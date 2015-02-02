@@ -9,18 +9,17 @@ header{
     color: #1d5c49;
 }
 #head2{
-    font-size: 1em;
+    font-size: 0.6em;
     line-height: 0px;
-    font-family: myBlessed;
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
 }
 #head3{
     font-size: 2em;
     text-align: center;
     text-decoration:wavy;
     color: orangered;
-    font-family: myBlackO;
+    font-family: 'Lobster', Georgia, "Times New Roman", Times, serif;
     line-height: 50px;
-    padding-right: 30%;
     padding-bottom: 5px;
 
 }
@@ -43,13 +42,6 @@ p{
 @font-face {
     font-family: myVollkorn;
     src: url(../fonts/Vollkorn/Vollkorn-Regular.ttf);
-}
-@font-face {
-    font-family: myBlackO;
-    src: url(../fonts/Black__Olives.ttf);
-}@font-face {
-    font-family: myBlessed;
-    src: url(../fonts/BLESD___.otf);
 }
 @font-face {
     font-family: myVollkorn;
