@@ -1,25 +1,40 @@
 header{
-    font-size: 2em;
-    font-style: bold;
-    padding-top: 20px;
-    font-family: myVollkorn;
 }
 #head1{
-    font-size: 2em;
-    color: #1d5c49;
+    font-size: 4em;
+    color: forestgreen;
+    font-weight: bold;
+    font-family: myVollkorn;
+    padding-bottom: 10px;
+
 }
+#navbar{
+    padding-left: 11%;
+    margin-left: 11%;
+}
+#navbar >li >a{
+    color: #ffffff;
+    font-weight: bold;
+}
+#navbar >li >a:hover{
+    text-decoration: blink;
+    color: #000000;
+    background-color: #ffffff;
+}
+
 #head2{
-    font-size: 0.6em;
+    font-size: 1.3em;
     line-height: 0px;
     font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    color: orange;
+    padding-bottom: 5px;
 }
 #head3{
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
-    text-decoration:wavy;
+    text-decoration:none;
     color: orangered;
-    font-family: 'Lobster', Georgia, "Times New Roman", Times, serif;
-    line-height: 50px;
+    font-family: 'Lobster';
     padding-bottom: 5px;
 
 }
@@ -36,7 +51,7 @@ p{
     margin-left: auto;
     margin-right: auto;
     width: 85%;
-    height: 65%;
+    min-height: 100%;
 }
 
 @font-face {
@@ -107,10 +122,6 @@ p{
 .color_bottom{
     background-color: #242e2f;
 }
-.div_padding{
-    padding-top: 10px;
-    margin-top: 10px;
-}
 hr {
     height: 2px;
     background-color: #34362b;
@@ -135,7 +146,7 @@ hr {
     text-align: center;
 }
 .alp-citoyennete{
-    background-color: #1d5c49;
+    background-color: #008000;
     font-weight: bold;
     text-align: center;
 
@@ -177,6 +188,7 @@ ul#nav2 li a{
     text-align: center;
     text-align: justify;
     border-color: darkorange;
+    font-size: 1.2em;
     padding-left: 10px;
     padding-right: 10px;
 }
