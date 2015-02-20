@@ -23,7 +23,7 @@ class EtudiantType extends AbstractType
             ->add('classe','choice',array(
                 'choices' => array('CI'=>'CI', 'CP'=>'CP', 'CE1'=>'CE1','CE2'=>'CE2',
                     'CM1'=>'CM1','CM2'=>'CM2','6EME'=>'6EME','5EME'=>'5EME','4EME'=>'4EME','3EME'=>'3EME','2ND'=>'2ND','1ERE'=>'1ERE','TERMINALE'=>'TERMINALE')))
-            ->add('save','submit')
+            ->add('Enregistrer','submit')
 
         ;
     }

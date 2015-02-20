@@ -17,12 +17,7 @@ class ContactType extends AbstractType
         $builder
             ->add('nom','text')
             ->add('mail','email')
-            ->add('categorie', 'entity', array(
-                'class'    => 'Framing33HomeBundle:Category',
-                'property' => 'name',
-                'multiple' => false,
-                'expanded' => false
-            ))
+            ->add('categorie','text')
             ->add('message','textarea')
             ->add('envoyer','submit')
         ;

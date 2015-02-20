@@ -1,5 +1,5 @@
 {% extends 'Framing33HomeBundle::base.html.twig' %}
-{% block title %}{{ parent() }}|Cours particuliers{% endblock %}
+{% block title %}{{ parent() }}|Aides aux devoirs{% endblock %}
 
 {% block body %}
    <div id="cadre">
@@ -8,6 +8,8 @@
            <hr>
            <p>Une formule qui permet, du primaire jusqu’au collège, de maîtriser les bases et d’acquérir de bonnes méthodes de travail telles que : les révisions des cours de la semaine, la tenue des cahiers, mais aussi l’entraînement aux exercices.
            Un enseignant polyvalent  peut intervenir dans plusieurs matières et aider votre enfant à développer son autonomie grâce à de bons conseils de méthodologie.</p>
+
+           {{ include('Framing33SoutienScolaireBundle:SoutienScolaire:nostarifs.html.twig') }}
        </div>
    </div>
 {% endblock %}

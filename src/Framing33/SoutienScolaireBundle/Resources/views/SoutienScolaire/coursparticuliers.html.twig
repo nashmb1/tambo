@@ -1,5 +1,5 @@
 {% extends 'Framing33HomeBundle::base.html.twig' %}
-{% block title %}{% endblock %}
+{% block title %}{{ parent() }}|Cours particuliers{% endblock %}
 
 {% block body %}
     <div id="cadre">
@@ -20,6 +20,9 @@
             <span>Des objectifs scolaires clairs</span>
             <p>L’objectif du soutien scolaire est d’aider l'élève à mieux s'organiser par l’acquisition d’une méthode d’approche et de travail. Pour cela, il est essentiel de fixer des objectifs clairs, réalistes et réalisables pour l’élève.
             Cette méthode d’approche et de travail lui permettra de relever progressivement le défi de l’excellence</p>
+
+            {{ include('Framing33SoutienScolaireBundle:SoutienScolaire:nostarifs.html.twig') }}
+
         </div>
     </div>
 {% endblock %}

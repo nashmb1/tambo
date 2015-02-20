@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>{% block title %}FRAMING33{% endblock %}</title>
+    <title>{% block title %}FRAMING33|Soutien Scolaire|Alphabétisation|Cours de langues{% endblock %}</title>
+
     {% block stylesheet %}
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -44,7 +45,7 @@
         </nav>
     </div>
 
-    <div class="color_top">
+    <div id="fixedMenu" class="color_top">
         <div class="row">
             <div class="col-md-3">
                 <h3 class="stn-scolaire">Soutien Scolaire</h3>
@@ -58,7 +59,7 @@
                 </ul>
 
 
-                <h3 class="alp-citoyennete"><a href="{{ path('framing33_alphabetisation_citoyennete') }}">Alphabétisation</a></h3>
+                <h3 class="alp-citoyennete"><a href="{{ path('framing33_alphabetisation_citoyennete') }}">Alphabétisation & Citoyenneté</a></h3>
                 <ul id="nav2" class="nav nav-pills nav-stacked">
                     <li><a href="{{ path('framing33_langue_francaise') }}">Langue française</a></li>
                     <li><a href="{{ path('framing33_langues_occidentales') }}">Langues occidentales</a></li>
@@ -81,13 +82,8 @@
 </div>
 
 {% block javascripts %}
-    <script
-            src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script
-            src="{{ asset('js/bootstrap.min.js')}}"></script>
-    <script>
-
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 {% endblock %}
 </body>
 </html>

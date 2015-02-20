@@ -1,5 +1,5 @@
 {% extends 'Framing33HomeBundle::base.html.twig' %}
-{% block title %}{% endblock %}
+{% block title %}{{ parent() }}|Groupes d'études{% endblock %}
 
 {% block body %}
     <div id="cadre">
@@ -10,7 +10,7 @@
                 Aussi, Framing33 propose, dans les villes où elle dispose d’une antenne, l’organisation de groupes d’études composés de 5 à 10 élèves d’une même classe afin de réduire les frais de suivi, tout en créant une dynamique de groupe.
 
             </p>
-
+            {{ include('Framing33SoutienScolaireBundle:SoutienScolaire:nostarifs.html.twig') }}
         </div>
     </div>
 

@@ -1,5 +1,5 @@
 {% extends 'Framing33HomeBundle::base.html.twig' %}
-{% block title %}{{ parent() }}|Cours particuliers{% endblock %}
+{% block title %}{{ parent() }}|Langues occidentales{% endblock %}
 
 {% block body %}
    <div id="cadre">
@@ -12,6 +12,28 @@
 
            <p><span>Le rythme d’apprentissage est entre vos mains.</span><br>
            Nous sommes à votre écoute pour vous fournir des prestations à la carte.</p>
+
+           <button class="btn" type="button" data-toggle="collapse" data-parent="#accordion" href="#locc">Voir nos tarifs</button>
+           <div id="locc" class="collapse" >
+               <table  class="table table-responsive">
+                   <tr>
+                       <td>Anglais (communication courante)</td><td>5 jours</td></tr>
+                   <tr>
+                       <td>Anglais (perfectionnement)</td><td>5 jours</td></tr>
+                   <tr>
+                       <td>Anglais des affaires</td><td>5 jours</td></tr>
+                   <tr>
+                       <td>Allemand (communication courante)</td><td>5 jours</td></tr>
+                   <tr>
+                       <td>Espagnol (communication courante)</td><td>5 jours</td></tr>
+                   <tr>
+                       <td>Regroupement</td><td>100€/jour (Hors taxes), soit 20€(HT) par heure </td></tr>
+                   <tr>
+                       <td>Intra (chez le client)</td><td>150€/jour (Hors taxes), soit 30€(HT) par heure</td></tr>
+               </table>
+
+               </p>
+           </div>
        </div>
    </div>
 {% endblock %}

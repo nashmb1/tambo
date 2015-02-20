@@ -1,5 +1,5 @@
 {% extends 'Framing33HomeBundle::base.html.twig' %}
-{% block title %}{% endblock %}
+{% block title %}{{ parent() }}|Stages intensifs{% endblock %}
 
 {% block body %}
     <div id="cadre">
@@ -8,6 +8,7 @@
             <p>
                 La période des vacances est souvent propice à la <span>révision des bases scolaires</span>, des notions non acquises durant l’année scolaire ou le trimestre précédent. Framing33 propose <span>stages intensifs</span> pendant une semaine ou 2 ou même pendant les grandes vacances, les cours pouvant être plus étalés. Avec des <span>professeurs sur toute la France</span>, les cours peuvent être dispensés à votre domicile ou sur votre lieu de vacances
             </p>
+            {{ include('Framing33SoutienScolaireBundle:SoutienScolaire:nostarifs.html.twig') }}
         </div>
     </div>
 {% endblock %}
