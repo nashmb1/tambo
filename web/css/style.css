@@ -50,24 +50,39 @@ p{
     margin:0 auto; /* center your carousel if other than 100% */
 }
 
-.carousel-caption > p{
+/*.carousel-caption > p{
     color: #000000;
     font-size: 1.2em;
-    text-align: left;
+    text-align: center;
+}*/
+.carousel-caption > p > strong{
+    color: red;
+    font-weight: bold;
 }
 .slider-size1{
     background-image: url(../images/soutien_scolaire.jpg);
     background-size:cover;
     height: 500px;
+    font-size: 1.2em;
 }
 
 .slider-size2{
     background: url(../images/alphabetisation.jpg);
     background-size:cover;
     height: 500px;
-}
+    font-size: 1.2em;
 
+}
+.slider-size2>.carousel-caption > p{
+    color: darkgreen;
+    font-weight: bold;
+}
+.slider-size3>.carousel-caption > p{
+    color: red;
+    font-weight: bold;
+}
 .slider-size3{
+    font-size: 1.2em;
     background: url(../images/citoyennete.jpg);
     background-size:cover;
     height: 500px;
