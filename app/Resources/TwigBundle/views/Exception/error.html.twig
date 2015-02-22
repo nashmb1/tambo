@@ -1,0 +1,16 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+
+    <div id="cadre">
+        <div id="error">
+            <h1>Une erreur est survenue!!!</h1><hr>
+            <h2>{{ status_code }}</h2>
+
+            <p>
+                Un problème est arrivé. Dites nous ce que vous faisiez lorsque l'erreur est survenue.
+                Nous allons y remedier le plus rapidement possible.
+            </p>
+
+        </div>
+    </div>
+{% endblock %}
